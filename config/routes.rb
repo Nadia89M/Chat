@@ -9,5 +9,5 @@ Rails.application.routes.draw do
 
   resources :direct_messages
 
-  root to: "chatroom#index"
+  root to: "chatrooms#index"
 end
