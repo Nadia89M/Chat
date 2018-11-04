@@ -1,0 +1,4 @@
+class Chatroom < ApplicationRecord
+  has_many :users, through: :chatroom_users
+  has_many :messages
+end
