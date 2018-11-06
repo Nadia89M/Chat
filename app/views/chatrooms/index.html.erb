@@ -1,19 +1,19 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1>Chatrooms</h1>
+<h1 class="settings-title">Settings</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Chatrooms</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @chatrooms.each do |chatroom| %>
-      <tr>
+      <tr class="t-actions">
         <td><%= chatroom.name %></td>
         <td><%= link_to 'Show', chatroom %></td>
         <td><%= link_to 'Edit', edit_chatroom_path(chatroom) %></td>
@@ -27,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Chatroom', new_chatroom_path %>
+<%= link_to 'New Chatroom', new_chatroom_path, class: "btn btn-primary", role: "button" %>

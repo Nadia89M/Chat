@@ -1,6 +1,6 @@
-<h1>Editing Chatroom</h1>
+<h1 class="settings-title">Editing Chatroom</h1>
 
 <%= render 'form', chatroom: @chatroom %>
 
-<%= link_to 'Show', @chatroom %> |
-<%= link_to 'Back', chatrooms_path %>
+<%= link_to 'Show', @chatroom, class: "btn btn-primary" %> |
+<%= link_to 'Back', chatrooms_path, class: "btn btn-primary" %>

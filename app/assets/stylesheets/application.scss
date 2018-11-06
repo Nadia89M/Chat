@@ -17,3 +17,47 @@
  // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ .navbar {
+   background-color: #2E6DA4;
+   .navbar-header a,
+   .nav li a {
+     color: orange;
+     font-weight: bold;
+     text-transform: uppercase;
+     &:hover {
+       color: white;
+     }
+   }
+ }
+
+ .btn-primary {
+   //background-color: #007bff !important;
+ }
+
+ .chatrooms-col {
+   margin-right: 100px;
+ }
+
+ .list {
+   list-style: square;
+   a {
+     text-transform: uppercase;
+     color: #2E6DA4;
+     font-weight: bold;
+   }
+   a:hover {
+     text-decoration: none;
+     color: orange;
+   }
+ }
+
+.chatrooms-title {
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid orange;
+  background-color: orange;
+  border-radius: 5%;
+}

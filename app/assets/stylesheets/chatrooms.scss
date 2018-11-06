@@ -5,3 +5,38 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.settings-title,
+.chatroom-name {
+  text-transform: uppercase;
+  color: orange;
+  padding-bottom: 40px;
+}
+
+.t-actions td a,
+.new {
+  padding: 10px 10px;
+  color: #2E6DA4;
+  &:hover {
+    color: orange;
+    text-decoration: none;
+  }
+}
+
+.t-actions td {
+  margin: 100px;
+}
+
+.user-name {
+  color: #2E6DA4;
+  margin: 5px 10px 5px 0;
+}
+
+.btn {
+  margin: 20px 5px;
+}
+
+input[type=submit]{
+  background-color: transparent;
+  border: 0px solid transparent;
+}

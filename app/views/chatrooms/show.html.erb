@@ -1,7 +1,8 @@
-<p>
-  <strong>Name:</strong>
+<h2 class="chatroom-name">
   <%= @chatroom.name %>
-</p>
+</h2>
+
+<br>
 
 <div data-behavior='messages' data-chatroom-id='<%= @chatroom.id %>'>
   <% @messages.each do |message| %>
@@ -10,5 +11,5 @@
 </div>
 
 <%= form_for [@chatroom, Message.new] do |f| %>
-  <%= f.text_area :body, rows: 1, class: "form-control", autofocus: true %>
+  <%= f.text_area :body, rows: 1, class: "form-control", style: "float: left; width: 60%; display: block", autofocus: true %>
 <% end %>
